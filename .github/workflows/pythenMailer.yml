@@ -22,7 +22,6 @@ jobs:
             - name: Install dependecies
               run: |
                 python -m pip install --upgrade pip
-                pip install smtplib email
 
             - name: Send mail by executing python script.yp
               run: python script.py
