@@ -1,0 +1,12 @@
+name: "Python mailer pipeline"
+
+on:
+    workflow_dispatch:
+
+jobs:
+
+    send_mail:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Update ubuntu
+              run: sudo apt-get update
